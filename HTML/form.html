@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/inscription" method="POST">
+        <div>
+            <h3>Nom</h3>
+            <input name="prenom" placeholder="Prénom" required>
+            <input name="nom" placeholder="Nom">
+        </div>
+
+        <div>
+            <h3>Username</h3>
+            <input name="username" placeholder="@gmail.com">
+            <div>
+                <a href="/custom-inscription">Je préfère utiliser mon adresse mail actuel</a>
+            </div>
+        </div>
+
+        <div>
+            <h3>Mot de passe</h3>
+            <input type="password">
+        </div>
+
+        <div>
+            <h3>Confirmer</h3>
+            <input type="password">
+        </div>
+
+        <div>
+                <h3>Date de naissance</h3>
+                <input type="text" name="jour">
+                <select>
+                    <option value="01">Janvier</option>
+                    <option value="02">Février</option>
+                    <option value="03">Mars</option>
+                </select>
+                <input type="text" name="annee">
+            </div>
+
+            <div>
+                    <h3>Je suis...</h3>
+                    <label>
+                        <input type="radio" name="sexe"> Homme
+                    </label>
+                    <label>
+                        <input type="radio" name="sexe"> Femme
+                    </label>
+                </div>
+
+                <div>
+                    <button>Inscription</button>
+                </div>
+    </form>
+</body>
+
+</html>
